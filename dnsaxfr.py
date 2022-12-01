@@ -40,7 +40,7 @@ def AXFR(domain, nameserver):
 if __name__ == "__main__":
 
     # ArgParser - Define usage
-    parser = argparse.ArgumentParser(prog="dns-axfr.py", epilog="DNS Zonetransfer Script", usage="dns-axfr.py [options] -d <DOMAIN>", prefix_chars='-', add_help=True)
+    parser = argparse.ArgumentParser(prog="dns-axfr.py", epilog="DNS Zonetransfer Script", usage="dnsaxfr.py [options] -d <DOMAIN>", prefix_chars='-', add_help=True)
 
     # Positional Arguments
     parser.add_argument('-d', action='store', metavar='Domain', type=str, help='Target Domain.\tExample: inlanefreight.htb', required=True)
